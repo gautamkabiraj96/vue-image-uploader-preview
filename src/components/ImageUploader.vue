@@ -15,18 +15,8 @@
       <img class="np-preview" :src="imageFile" />
     </div>
     <div v-if="imageFile != null && imageFile.length != 0 && !isImageUploading">
-      <button
-        class="np-upload-btn np-upload-btn-cancel"
-        v-on:click="clearImage"
-      >
-        Cancel
-      </button>
-      <button
-        class="np-upload-btn np-upload-btn-confirm"
-        v-on:click="uploadImage"
-      >
-        Upload
-      </button>
+      <button class="np-upload-btn np-upload-btn-cancel">Cancel</button>
+      <button class="np-upload-btn np-upload-btn-confirm">Upload</button>
     </div>
     <div class="np-upload-in-progress" v-if="isImageUploading">
       Please wait while your file is being uploaded ...
