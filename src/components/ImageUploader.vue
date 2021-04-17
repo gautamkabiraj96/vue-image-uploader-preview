@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>Image uploader</h2>
     <div
       class="np-image-upload-picker"
       v-if="imageFile == null || imageFile.length == 0"
