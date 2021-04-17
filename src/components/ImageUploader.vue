@@ -27,9 +27,6 @@
 <script>
 export default {
   name: "ImageUploader",
-  props: {
-    msg: String,
-  },
   data() {
     return {
       imageFile: null,
